@@ -19,7 +19,16 @@ $(document).ready(function(){
       $('iframe').toggle('clip', 'slow');
       return false;
     });
+    //Slider d'images Section 4
+    $(function(){
+      setInterval(function(){
+         $(".slideshow .ulslider").animate({marginLeft:-1000},800,function(){
+            $(this).css({marginLeft:-0}).find("li:last").after($(this).find("li:first"));
+         })
+      }, 3500);
+   });
   });
+
   /*========================*/
   /*   FERMETURE BISTROT    */
   /*========================*/

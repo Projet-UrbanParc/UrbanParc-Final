@@ -136,9 +136,11 @@ main img {
     width: 100%;
     box-shadow: 10px 10px 5px #888888;
 }
+/*////////////////////////////////////////////*/
+/*button et slider à gérer dans les media query*/
 button{
   width: 30%;
-  height: 3em;
+  height: 2em;
   margin-top: 2em;
   border: none;
   border-radius: 4%;
@@ -149,6 +151,27 @@ button{
   box-shadow: 10px 10px 5px #888888;
   cursor: pointer;
 }
+/*CSS slider image section 4*/
+.slideshow {
+   width: 70%;
+   height: 30em;
+   overflow: hidden;
+}
+
+.slideshow .ulslider {
+  display: flex;
+  justify-content: space-around;
+    /* 4 images donc 4 x 100% */
+   width: 400%;
+   height: 30em;
+   padding:0; margin:0;
+   list-style: none;
+   background-color: #fff;
+}
+.slideshow .ulslider li {
+   float: left;
+}
+/*///////////////////////////*/
 article p{
   font-family: 'Arial', sans-serif;
 }
@@ -244,7 +267,7 @@ li a:hover {
         -webkit-box-align: end;
             -ms-flex-align: end;
                 align-items: flex-end;
-        background-image: url("../images/bgbody.jpg");
+        background-image: url("../images/header_accueil.png");
         background-repeat: no-repeat;
         background-size: cover;
         border-bottom: 3px solid #FB7826;
@@ -570,6 +593,7 @@ li a:hover {
         text-align: center;
         margin: 0.5em;
         font-size: 20px;
+        font-family: 'Futura';
         color: #FB7826;
     }
     footer a {
@@ -876,6 +900,7 @@ li a:hover {
         text-align: center;
         margin: 1.3em;
         font-size: 20px;
+        font-family: 'Futura';
         color: #FB7826;
     }
     footer a {
@@ -963,12 +988,12 @@ li a:hover {
       -webkit-box-align: end;
           -ms-flex-align: end;
               align-items: flex-end;
-      background-image: url("../images/bgbody.jpg");
+      background-image: url("../images/header_accueil.png");
       background-repeat: no-repeat;
       background-size: cover;
       border-bottom: 3px solid #FB7826;
       width: 100%;
-      height: 25em;
+      height: 35em;
   }
   header a {
       color: #fff;
@@ -1327,6 +1352,7 @@ li a:hover {
         text-align: center;
         margin: 1em;
         font-size: 25px;
+        font-family: 'Futura';
         color: #FB7826;
     }
     footer a {
