@@ -1,0 +1,80 @@
+html{
+  height: 100%;
+}
+body{
+  background: linear-gradient(45deg, #fb7826, #f5fb00, #000000);
+  background-size: 600% 600%;
+  background-repeat: no-repeat;
+  -webkit-animation: AnimationName 8s ease infinite;
+  -moz-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite;
+  }
+  /*animation*/
+  @-webkit-keyframes AnimationName {
+   0%{background-position:0% 44%}
+   50%{background-position:100% 57%}
+   100%{background-position:0% 44%}
+  }
+  @-moz-keyframes AnimationName {
+   0%{background-position:0% 44%}
+   50%{background-position:100% 57%}
+   100%{background-position:0% 44%}
+  }
+  @keyframes AnimationName {
+   0%{background-position:0% 44%}
+   50%{background-position:100% 57%}
+   100%{background-position:0% 44%}
+}
+
+
+h1{
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 55px;
+}
+
+h2{
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 35px;
+}
+
+.construction {
+  text-align: center;
+}
+
+.boutonfermer{
+  margin-left: 1.5em;
+  margin-top: 1em;
+}
+
+.boutonfermer:hover{
+box-shadow: -1px 4px 4px #fff;
+}
+
+.headerconstruction{
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerconstruction img{
+height: 5em;
+width: 5em;
+}
+
+p{
+  text-align: center;
+  font-size: 26px;
+  font-family: sans-serif;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px)
+{
+  img{
+    width: 100%;
+  }
+
+  .retour{
+    margin-top: 1.5em;
+  }
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Urban Parc</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- LINK ICON FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FONT POLICE GOOGLE -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+    <!-- LINK CALLENDRIER -->
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/calendar.css">
+    <!-- LINK SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!--Effets Audio Nav-->
+        <audio id="son0" src="audio/sontarifs.ogg"></audio>
+        <audio id="son1" src="audio/sonacceuil.ogg"></audio>
+        <audio id="son2" src="audio/branchage.ogg"></audio>
+        <audio id="son3" src="audio/sonskate.ogg"></audio>
+        <audio id="son4" src="audio/ambiancecafe.ogg"></audio>
+        <audio id="son5" src="audio/ambevent.ogg"></audio>
+        <audio id="son6" src="audio/sonannif.ogg"></audio>
+        <audio id="son7" src="audio/sontrampo.ogg"></audio>
+        <audio id="son8" src="audio/songroupe.ogg"></audio>
+        <header>
+  			<!-- NAVIGATION -->
+  			<nav>
+  				<ul><!--Mettre les id et rel des links dans les li-->
+  					<li class="accueil" id='link1' rel="son1"><a href="#">Accueil</a></li>
+  					<li class="accrobranche" id='link2' rel="son2"><a href="#">Accrobranche</a></li>
+  					<li class="skatepark" id='link3' rel="son3"><a href="#">SkatePark</a></li>
+  					<li class="trampo" id='link7' rel="son7"><a href="#">Trampoline</a></li>
+  					<li class="tarif" id='link0' rel="son0"><a href="#">Tarifs</a></li>
+  					<li class="anniversaire" id='link6' rel="son6"><a href="#">Anniversaire</a></li>
+  					<li class="evenement" id='link5' rel="son5"><a href="#">Event</a></li>
+  					<li class="groupes" id='link8' rel="son8"><a href="#">Groupes</a></li>
+  					<li class="media"><a href="media.html">Photo/Video</a></li>
+  				</ul>
+  				<div class="titre_bistrot">
+  					<i class="fa fa-bell-slash" id="mute" aria-hidden="true"></i>
+  					<!--Bouton mute transformé en lien-->
+  					<div id="boutonbistrot">
+  						<p id="link4" rel="son4" href="#">Bistrot</p>
+  					</div>
+  				</div>
+  			</nav>
+  			<!-- MENU BURGER PORTABLE -->
+  			<div class="btn-navigation">
+  				<div class="barre"></div>
+  				<div class="barre"></div>
+  				<div class="barre"></div>
+  			</div>
+  			<article class="header_bouton">
+  				<div class="bouton_facebook">
+  					<a href="https://www.facebook.com/urbanparc/" target="_blank" class="fc"><i class="fa fa-facebook-official"></i>Urban Parc</a>
+  					<a href="https://www.facebook.com/urbanparc/" target="_blank" class="fc"><i class="fa fa-facebook-official"></i>Bistrot</a>
+  				</div>
+  			</article>
+  		</header>
+        <!--===============================================================-->
+        <!-- MAIN BISTROT -->
+        <main id="mainbistrot">
+            <!-- SECTION CONTAINER I / II -->
+						<div class="bouton_close">
+							<i id="fermer" class="fa fa-times-circle" aria-hidden="true"></i>
+						</div>
+            <section class="sec_bistrot">
+                <!-- SECTION I -->
+                <section class="sec1_bistrot">
+                    <!-- ARTICLE IMAGE -->
+                    <div class="img_txt">
+                        <img src="images/bgbistro.jpg" alt="Image Test">
+                    </div>
+                    <!-- ARTICLE TEXTE -->
+                    <div>
+                        <h2>BISTROT</h2>
+                        <p>- Sur place ou à emporter<br/> - Espace de restauration chauffé<br/> - Terrasse / Parking privé / Wifi gratuit<br/> - Possibilité réservation groupe<br/> - Tickets restaurant acceptés<br/> Ouvert tous les midis sauf le dimanche.
+                        </p>
+                    </div>
+                </section>
+                <!-- FIN SECTION I -->
+                <hr class="hr">
+                <!-- SECTION II -->
+                <section class="sec2_bistrot">
+                    <!-- ARTICLE TEXTE -->
+                    <div>
+                        <h2>INFOS</h2>
+                        <p>Un approvisionnement LOCAL, une offre ECO-responsable, une lutte contre le gaspillage alimentaire.</p>
+                        <p>Des recettes faites "comme à la maison", une ambiance conviviale, chaleureuse, COOL.</p>
+                    </div>
+                    <!-- ARTICLE IMAGE -->
+                    <div class="img_txt">
+                        <img src="images/bgbodybistro.jpg" alt="Image Test">
+                    </div>
+                </section>
+                <!-- FIN SECTION II -->
+            </section>
+            <!-- FIN SECTION CONTAINER I / II -->
+            <hr class="hr_bistrot" />
+            <!-- SECTION III -->
+            <section class="sec3_bistrot">
+                <!-- ARTICLE IMAGE -->
+                <div class="img_txt">
+                    <img src="images/bistro.jpg" alt="Image Test">
+                </div>
+                <!-- ARTICLE TEXTE -->
+                <div>
+                    <h2>MENUS</h2>
+                    <p>- Menu Etudiant..................5,50€<br/> - Menu Rapide....................6,50€<br/> - Assiette du Jour...............10,50€<br/>
+                        <span>(Croq'Jaffle, burgers,salades, potatoes, soupes, pâtisseries maison; <br/>Assiettes sans gluten, végétarienne ou vegan disponibles)</span><br/> - Vendredi Soir: formule SKATE-BURGER
+                    </p>
+                </div>
+            </section>
+            <!-- FIN SECTION III -->
+        </main>
+        <!-- FIN MAIN BISTROT -->
+        <!--===============================================================-->
+        <!-- MAIN -->
+        <main class="mainindex">
+            <!-- SECTION I -->
+            <section id="section1" class="section1">
+                <!-- ARTICLE IMAGE -->
+                <article class="img_sec">
+                  <video autoplay controls muted poster="images/imgup/sk8/skatepark1.png">
+                  <source src="UPPUB.webm" type="video/webm">
+                  <source src="UPPUB.mp4" type="video/mp4">
+                </video>
+                </article>
+                <!-- ARTICLE TEXTE -->
+                <article class="text_sec">
+                    <h2>NOUVEAU</h2>
+                    <p>Une ancienne usine transformée en Parc de Loisirs en centre-ville d' Alès (à 5min à pied du Cinéplanet) :</p>
+                    <p>Bienvenue à URBAN PARC, un lieu incontournable où se mélangent les Sports de Glisse, l'Accrobranche, le Street-Art et la bonne bouffe !</p>
+                    <p>Petits ou grands, en famille ou entre amis, pour bouger, déguster, admirer, apprendre et partager… Venez vite découvrir ce lieu unique en France !</p>
+                </article>
+            </section>
+            <!-- FIN DE SECTION I -->
+            <hr class="hr_section">
+            <!-- SECTION II -->
+            <section id="section2" class="section2">
+              <article class="img_sec">
+                  <img src="images/imgup/sk8/Skatepark5.jpg" alt="Menu Test">
+              </article>
+                <!-- ARTICLE TEXT -->
+                <article class="text_sec">
+                    <h2>ACTIVITES</h2>
+                    <p> 1000m2 INDOOR D’ACTIVITÉS ET DE LOISIRS</p>
+                    <h3>SKATEPARK</h3>
+                    <p>Trottinette, rollers, skateboard, bmx… 600m2 de glisse urbaine. Zone spéciale débutants. Location de matériel.</p>
+                    <h3>ACCROBRANCHE</h3>
+                    <p>2 parcours pour enfants, ados et adultes sur une structure métallique de 200m2 : 35 ateliers en hauteur dont 2 tyroliennes de 20m.</p>
+                    <h3>TRAMPOLINE GEANT</h3>
+                    <p>30m2 de structure en filet sécurisée à 4m du sol !</p>
+                </article>
+                <!-- ARTICLE IMAGE -->
+                <article class="img_sec2">
+                  <img src="images/imgup/thumb/upthumb48.jpeg" alt="Menu Test">
+                  <p>Toutes nos activités sont accessibles à partir de 3 ans et encadrées par des moniteurs diplômés.</p>
+                </article>
+            </section>
+            <!-- FIN DE SECTION II -->
+            <hr class="hr_section">
+            <!-- SECTION III -->
+            <section id="section3" class="section3">
+                <article class="img_sec">
+                    <img src="images/bgbistro.jpg" alt="Menu Test">
+                </article>
+                <article class="text_sec">
+                  <div class="titre_sec">
+                    <h2>BISTROT - GALERIE</h2>
+                  </div>
+                  <div class="titre_sec">
+                    <h3>BISTROT</h3>
+                  </div>
+                    <p>Restauration sur place ou à emporter. Produits frais, bios et locaux. Cuisine de saison. Salle chauffée. Venez découvrir notre spécialité venue d'Australie : le Jaffle</p>
+                  <div class="titre_sec">
+                    <h3>Galerie Street-Art</h3>
+                  </div>
+                    <p>Fresques géantes réalisées par des artistes graffeurs de la région, expositions d'artistes locaux, évènements culturels (concerts, théâtre, impro, projections…)</p>
+                </article>
+                <article class="img_sec">
+                    <img src="images/imgup/gallerie/gallerie1.jpg" alt="Menu Test">
+                </article>
+            </section>
+            <!-- FIN DE SECTION III -->
+            <hr class="hr_section">
+            <!-- SECTION IV -->
+            <section id="section4" class="section4">
+                <!-- ARTICLE TEXT -->
+                <article class="text_sec">
+                    <h2>ACTUALITES</h2>
+                    <p>Salut les riders et rideuses!</p>
+                    <p>Pour débuter ou se perfectionner en roller, trottinette et skateboard, courrez vous inscrire au stage de vacances d'Urban Parc.</p>
+                    <p>Le skatepark est réservé et le stage est encadré par des pros.</p>
+                    <p>Inscription sur place ou par email ou par téléphone.</p>
+                    <p>Faites chauffer les roulettes !!!</p>
+                </article>
+                <!-- ARTICLE IMAGE -->
+                <div class="img_sec_resize">
+                  <img src="images/imgup/event/actu0217.png" alt="Menu Test">
+                </div>
+            </section>
+            <!-- FIN DE SECTION IV -->
+            <!-- GOOGLE MAP -->
+            <iframe class="maps" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDept59DU6G3wh0YDLtdkDAqcSW_l-cxJE&q=Urban+Parc,Ales+FR" allowfullscreen></iframe>
+            <!--API Key: AIzaSyDept59DU6G3wh0YDLtdkDAqcSW_l-cxJE-->
+            <!--Style map avec accords du domaine: https://maps.googleapis.com/maps/api/staticmap?key=YOUR_API_KEY&center=44.1331529476397,4.078829541655424&zoom=15&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x212121&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x757575&style=element:labels.text.stroke%7Ccolor:0x212121&style=feature:administrative%7Celement:geometry%7Ccolor:0x757575&style=feature:administrative.country%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0x3e251c%7Csaturation:100%7Cvisibility:on&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0x181818&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b&style=feature:road%7Celement:geometry.fill%7Ccolor:0x2c2c2c&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x8a8a8a&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x373737&style=feature:road.highway%7Celement:geometry%7Ccolor:0x3c3c3c&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0x4e4e4e&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0xf17013&style=feature:road.local%7Celement:labels.text.stroke%7Ccolor:0x37251c&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:water%7Celement:geometry%7Ccolor:0x000000&style=feature:water%7Celement:geometry.fill%7Ccolor:0x3f8ba8&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x3d3d3d&size=480x360-->
+            <!-- FOOTER -->
+        </main>
+        <footer>
+           <div class="titre_urban">
+               <h4>Urban Parc</h4>
+               <a href="#" id="qsn">Informations contacts</a>
+           </div>
+           <div class="voir">
+               <h4>Revoir</h4>
+               <a href="#">Infos</a>
+               <a href="#">Acceuil</a>
+               <a href="#">Accrobranche</a>
+               <a href="#">Skate Parc</a>
+               <a href="#">Bistrot</a>
+               <a href="#">Evenement</a>
+               <a href="#">Anniversaire</a>
+           </div>
+           <div class="localisation">
+               <h4>Localisation</h4>
+               <a href="#" class="rue_footer"><i class="fa fa-map-marker" aria-hidden="true"></i> 17 Rue Marcel Paul, 30100 Alès</a>
+               <p class="num_footer"><i class="fa fa-phone-square" aria-hidden="true"></i> 04 66 43 35 76</p>
+               <p class="email_footer"><i class="fa fa-envelope" aria-hidden="true"></i> urbanparc.ales@gmail.com</p>
+           </div>
+           <div class="partenaire">
+               <h4>Partenaires</h4>
+               <div class="img_logo">
+                    <a href="http://www.forestparc.com/" target="_blank"><img src="images/logo_partenaire/ForestParc.png"  alt="" /></a>
+                    <a href="https://www.facebook.com/aleswheelsclub/" target="_blank"><img src="images/logo_partenaire/logo_wheels_club.png" alt="" /></a>
+               </div>
+               <div class="img_logo">
+                    <a href="http://www.alescevennes.fr/portal/portal/ac/default" target="_blank"><img src="images/logo_partenaire/ales agglo.png"  alt="" /></a>
+                    <a href="http://www.clic-n-roll.com/fr/" target="_blank"><img src="images/logo_partenaire/ClicNRoll.jpg"  alt="" /></a>
+               </div>
+               <div class="img_logo">
+                    <a href="https://alesmyriapolis.fr/" target="_blank"><img src="images/logo_partenaire/myriapolis.png" alt="" /></a>
+                    <a href="http://www.bambouseraie.com/" target="_blank"><img src="images/logo_partenaire/logo-bambouseraie-cevennes.png" alt="" /></a>
+               </div>
+           </div>
+           <div class="suivre">
+               <h4>Nous suivre</h4>
+               <a href="https://www.facebook.com/urbanparc/" target="_blank" class="fc"><i class="fa fa-facebook-official" style="font-size:48px"></i></a>
+           </div>
+       </footer>
+        <!-- LINK SCRIPT -->
+        <script type="text/javascript" src="js/horscontexte.js"></script>
+        <script type="text/javascript" src="js/calendrier.js"></script>
+    </div>
+</body>
+
+</html>
