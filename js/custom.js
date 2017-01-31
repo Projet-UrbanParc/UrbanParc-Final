@@ -3,11 +3,14 @@ $(document).ready(function(){
     $(this).find('.barre').toggleClass('white');
     $('nav').toggleClass('isOpen');
   });
+
 });
+
 /*=====================*/
 /*   TOGGLE BISTROT  & MAP (Iframe)  */
 /*=====================*/
 $(document).ready(function(){
+  $('#imgtarifs1').hide(); //Boutons tarifs en cour
   $('#mainbistrot').hide();
   $('iframe').hide();
 });
@@ -19,6 +22,7 @@ $(document).ready(function(){
       $('iframe').toggle('clip', 'slow');
       return false;
     });
+
     //Slider d'images Section 4
     $(function(){
       setInterval(function(){

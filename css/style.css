@@ -151,6 +151,10 @@ button{
   box-shadow: 10px 10px 5px #888888;
   cursor: pointer;
 }
+
+button:hover{
+  opacity: 0.7;
+}
 /*CSS slider image section 4*/
 .slideshow {
    width: 70%;
@@ -172,6 +176,7 @@ button{
    float: left;
 }
 /*///////////////////////////*/
+
 article p{
   font-family: 'Arial', sans-serif;
 }
@@ -1180,11 +1185,11 @@ li a:hover {
         margin-bottom: 1em;
         text-align: center;
     }
-    .text_sec, .calendrier {
-        /*calendrier déplacé dans main anniversaire*/
+    .text_sec {
         width: 50%;
         height: auto;
     }
+
     /*Image ACTUALITES Accueil*/
     .img_sec_resize {
       display: flex;
