@@ -120,6 +120,8 @@
 
 body {
     font-family: 'UrbanJungle';
+    background: url("../images/arrow_graff.jpg") 50% 50%;
+    background-repeat: no-repeat;    
 }
 
 p {
