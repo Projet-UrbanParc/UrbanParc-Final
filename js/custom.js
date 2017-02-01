@@ -32,12 +32,4 @@ $(document).ready(function(){
      })
   }, 3500);
 
-  /*===================*/
-  /*   Hover Tarifs    */
-  /*===================*/
-  $('#hovertarifs').hover(function(){
-    $('li.tarif').css({
-      'background-color': 'rgba(209, 172, 53, 0.8);'
-    });
-  });
 });

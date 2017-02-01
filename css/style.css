@@ -15,7 +15,6 @@
     animation-iteration-count: revert;
 }
 
-
 .box-active2 {
     -webkit-animation-name: translateInLeft;
     animation-name: translateInLeft;
@@ -88,11 +87,18 @@
         transform: translateX(0%);
     }
 }
+
+
 /*---------------------------------------------*/
 
-  /*=========*/
-  /*  RESET  */
-  /*=========*/
+
+/*=========*/
+
+
+/*  RESET  */
+
+
+/*=========*/
 
 * {
     margin: 0;
@@ -100,35 +106,46 @@
     box-sizing: border-box;
 }
 
+
 /*---------------------------------------*/
 
 
-  /*=============*/
-  /*== GENERAL ==*/
-  /*=============*/
+/*=============*/
+
+
+/*== GENERAL ==*/
+
+
+/*=============*/
 
 body {
     font-family: 'UrbanJungle';
 }
+
 p {
     font-family: 'Arial', sans-serif;
 }
+
 a {
     text-decoration: none;
     outline: none;
-	color: #753528;
+    color: #753528;
 }
-a:hover{
+
+a:hover {
     color: #FB7826;
 }
+
 li {
     list-style: none;
 }
+
 audio {
     display: none;
 }
-video{
-  width: 100%;
+
+video {
+    width: 100%;
 }
 
 main img {
@@ -136,43 +153,58 @@ main img {
     width: 100%;
     box-shadow: 10px 10px 5px #888888;
 }
+
+
 /*////////////////////////////////////////////*/
+
+
 /*slider à gérer dans les media query*/
+
+
 /*CSS slider image section 4*/
+
 .slideshow {
-   width: 70%;
-   height: 30em;
-   overflow: hidden;
+    width: 70%;
+    height: 30em;
+    overflow: hidden;
 }
 
 .slideshow .ulslider {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
     /* 4 images donc 4 x 100% */
-   width: 400%;
-   height: 30em;
-   padding:0; margin:0;
-   list-style: none;
-   background-color: #fff;
+    width: 400%;
+    height: 30em;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #fff;
 }
+
 .slideshow .ulslider li {
-   float: left;
+    float: left;
 }
+
+
 /*///////////////////////////*/
 
-article p{
-  font-family: 'Arial', sans-serif;
+article p {
+    font-family: 'Arial', sans-serif;
 }
-.email{
+
+.email {
     font-family: "ToxTypewriter";
     font-weight: bold;
     font-size: 1.500em;
 }
-.fa{
+
+.fa {
     cursor: pointer;
     text-shadow: none;
     color: #FB7826;
 }
+
+
 /* HOVER DES BOUTONS DE LA NAV */
 
 .accueil:hover {
@@ -214,6 +246,7 @@ article p{
 li a:hover {
     color: #fff;
 }
+
 @font-face {
     font-family: "Futura";
     src: url("../fonts/FuturaHand.ttf");
@@ -235,26 +268,33 @@ li a:hover {
 }
 
 @font-face {
-  font-family: "UrbanJungle";
-  src: url("../fonts/UrbanJungleDEMO.otf");
+    font-family: "UrbanJungle";
+    src: url("../fonts/UrbanJungleDEMO.otf");
 }
+
+
 /*---------------------------------------------------------------------------------------------------------------------*/
 
+
 /*------------------------*/
+
+
 /*--RESPONSIVE TELEPHONE--*/
+
+
 /*------------------------*/
 
 @media all and (max-width: 750px) {
-  /*============*/
-  /*== HEADER ==*/
-  /*============*/
+    /*============*/
+    /*== HEADER ==*/
+    /*============*/
     header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: end;
-            -ms-flex-align: end;
-                align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end;
         background-image: url("../images/header_accueil.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -265,7 +305,6 @@ li a:hover {
     header a {
         color: #fff;
     }
-
     /* BOUTON FACEBOOK/ INFORMATION */
     header i {
         margin: 0.3em;
@@ -297,9 +336,9 @@ li a:hover {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-          align-items: flex-start;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        align-items: flex-start;
         border-top: 2px solid #1A26B0;
         border-left: 2px solid #1A26B0;
         border-radius: 20px 0px 0px 0px;
@@ -401,7 +440,7 @@ li a:hover {
         font-size: 0.8em;
         color: #fff;
     }
-    nav a:hover{
+    nav a:hover {
         color: #fff;
     }
     nav li {
@@ -415,14 +454,14 @@ li a:hover {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         cursor: pointer;
         font-size: 20px;
         width: 100%;
@@ -440,22 +479,22 @@ li a:hover {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         text-align: center;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         padding: 2%;
     }
     main h2 {
         font-size: 20px;
         margin: 0.5em;
     }
-    main h3{
+    main h3 {
         font-size: 18px;
         margin: 0.5em;
     }
@@ -486,11 +525,11 @@ li a:hover {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         position: fixed;
         text-align: center;
         z-index: 5;
@@ -507,11 +546,11 @@ li a:hover {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     #mainbistrot h2 {
         color: #B3FA84;
@@ -534,8 +573,8 @@ li a:hover {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
         width: 100%;
     }
     #mainbistrot .fa-times-circle {
@@ -544,6 +583,36 @@ li a:hover {
         font-size: 2em;
         padding: 1%;
         color: #B3FA84;
+    }
+    /*========*/
+    /*  MAPS  */
+    /*========*/
+    .maps {
+        width: 100%;
+        border-top: 3px solid #FB7826;
+        border-radius: 10px 10px 0px 0px;
+        height: 300px;
+    }
+    /*////////////////////////////////////////////*/
+    /*CSS slider image section 4*/
+    .slideshow {
+        width: 100%;
+        height: 10em;
+        overflow: hidden;
+    }
+    .slideshow .ulslider {
+        display: flex;
+        justify-content: space-around;
+        /* 4 images donc 4 x 100% */
+        width: 400%;
+        height: 10em;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background-color: #fff;
+    }
+    .slideshow .ulslider li {
+        float: left;
     }
     /*============*/
     /*== FOOTER ==*/
@@ -554,14 +623,14 @@ li a:hover {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         text-align: center;
         padding: 4%;
         background-color: #222;
@@ -573,8 +642,8 @@ li a:hover {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         margin: 0.5em;
     }
     footer h4 {
@@ -594,16 +663,15 @@ li a:hover {
     .localisation p, a {
         text-align: left;
     }
-    .img_logo{
+    .img_logo {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        }
-    .img_logo img{
-      width: 8em;
     }
-
+    .img_logo img {
+        width: 8em;
+    }
 }
 
 
@@ -621,8 +689,8 @@ li a:hover {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: end;
-            -ms-flex-align: end;
-                align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end;
         background-image: url("../images/bgbody.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -664,23 +732,23 @@ li a:hover {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-          align-items: flex-start;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        align-items: flex-start;
         border-top: 2px solid #1A26B0;
         border-left: 2px solid #1A26B0;
         border-radius: 20px 0px 0px 0px;
         padding: 0.5em;
         background-color: #000;
     }
-   /* NAV */
+    /* NAV */
     nav {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         position: fixed;
         width: 100%;
         top: 0;
@@ -700,8 +768,8 @@ li a:hover {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         border-right: 2px solid #FB7826;
     }
     nav a {
@@ -709,12 +777,12 @@ li a:hover {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         margin: 0.5em;
         color: #000;
     }
-    nav a:hover{
+    nav a:hover {
         color: #fff;
     }
     /* BOUTON BISTROT  */
@@ -724,12 +792,12 @@ li a:hover {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         text-align: center;
         cursor: pointer;
         -webkit-transform: skewX(6deg);
-                transform: skewX(6deg);
+        transform: skewX(6deg);
         background-color: rgba(0, 0, 0, 0.9);
         border-left: solid 3px #64C755;
         border-bottom: solid 3px #64C755;
@@ -759,15 +827,15 @@ li a:hover {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         text-align: center;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         padding: 2%;
     }
     main h2 {
@@ -801,7 +869,8 @@ li a:hover {
         display: -ms-flexbox;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;;
+        justify-content: space-around;
+        ;
         position: fixed;
         text-align: center;
         z-index: 5;
@@ -818,11 +887,11 @@ li a:hover {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     #mainbistrot h2 {
         color: #B3FA84;
@@ -845,8 +914,8 @@ li a:hover {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
         width: 100%;
     }
     #mainbistrot .fa-times-circle {
@@ -856,6 +925,35 @@ li a:hover {
         padding: 1%;
         color: #B3FA84;
     }
+    /*========*/
+    /*  MAPS  */
+    /*========*/
+    .maps {
+        width: 100%;
+        border-top: 3px solid #FB7826;
+        border-radius: 10px 10px 0px 0px;
+        height: 300px;
+    }
+    /*CSS slider image section 4*/
+    .slideshow {
+        width: 100%;
+        height: 20em;
+        overflow: hidden;
+    }
+    .slideshow .ulslider {
+        display: flex;
+        justify-content: space-around;
+        /* 4 images donc 4 x 100% */
+        width: 400%;
+        height: 25em;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background-color: #fff;
+    }
+    .slideshow .ulslider li {
+        float: left;
+    }
     /*============*/
     /*== FOOTER ==*/
     /*============*/
@@ -864,11 +962,11 @@ li a:hover {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
         text-align: center;
         padding: 1%;
         background-color: #222;
@@ -880,8 +978,8 @@ li a:hover {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         margin: 0.5em;
     }
     footer h4 {
@@ -905,35 +1003,38 @@ li a:hover {
         text-align: center;
         margin: 2%;
     }
-    .suivre{
+    .suivre {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .suivre a{
+    .suivre a {
         align-self: center;
     }
-    .img_logo{
+    .img_logo {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        }
-    .img_logo img{
-      width: 5em;
     }
-
+    .img_logo img {
+        width: 5em;
+    }
 }
 
-  /*======================================*/
-  /*   RESPONSIVE   (min-width: 1850px )  */
-  /*======================================*/
+
+/*======================================*/
+
+
+/*   RESPONSIVE   (min-width: 1850px )  */
+
+
+/*======================================*/
 
 @media all and (min-width: 1001px) {
-
-  /*=====================*/
-  /*== GENERAL SCREEN  ==*/
-  /*=====================*/
+    /*=====================*/
+    /*== GENERAL SCREEN  ==*/
+    /*=====================*/
     .container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -965,71 +1066,69 @@ li a:hover {
     .lientxt:hover {
         color: #FB7826;
     }
-
-  /*============*/
-  /*== HEADER ==*/
-  /*============*/
-  header {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end;
-      background-image: url("../images/header_accueil.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-bottom: 3px solid #FB7826;
-      width: 100%;
-      height: 35em;
-  }
-  header a {
-      color: #fff;
-  }
-  /* BOUTON FACEBOOK/ INFORMATION */
-  header i {
-      margin: 0.3em;
-      color: #FB7826;
-  }
-  .header_bouton {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      align-items: flex-end;
-      width: 100%;
-      height: 35em;
-      padding: 0;
-      margin: 0;
-      font-family: "Futura";
-  }
-  .bouton_facebook {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+    /*============*/
+    /*== HEADER ==*/
+    /*============*/
+    header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        background-image: url("../images/header_accueil.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 3px solid #FB7826;
+        width: 100%;
+        height: 35em;
+    }
+    header a {
+        color: #fff;
+    }
+    /* BOUTON FACEBOOK/ INFORMATION */
+    header i {
+        margin: 0.3em;
+        color: #FB7826;
+    }
+    .header_bouton {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        width: 100%;
+        height: 35em;
+        padding: 0;
+        margin: 0;
+        font-family: "Futura";
+    }
+    .bouton_facebook {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
         align-items: flex-start;
-      border-top: 2px solid #1A26B0;
-      border-left: 2px solid #1A26B0;
-      border-radius: 20px 0px 0px 0px;
-      padding: 0.5em;
-      background-color: #000;
-  }
-  /*===========*/
-  /*==  NAV  ==*/
-  /*===========*/
-
+        border-top: 2px solid #1A26B0;
+        border-left: 2px solid #1A26B0;
+        border-radius: 20px 0px 0px 0px;
+        padding: 0.5em;
+        background-color: #000;
+    }
+    /*===========*/
+    /*==  NAV  ==*/
+    /*===========*/
     nav {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1080,8 +1179,7 @@ li a:hover {
         font-size: 1.4em;
         color: black;
     }
-  /* DIV BISTROT */
-
+    /* DIV BISTROT */
     .titre_bistrot {
         width: 10em;
         height: 8em;
@@ -1112,10 +1210,9 @@ li a:hover {
     #boutonbistrot {
         margin-top: 0.5em;
     }
-  /*===========*/
-  /*==  MAIN ==*/
-  /*===========*/
-
+    /*===========*/
+    /*==  MAIN ==*/
+    /*===========*/
     main {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1172,52 +1269,51 @@ li a:hover {
         width: 50%;
         height: auto;
     }
-
     /*Image ACTUALITES Accueil*/
     .img_sec_resize {
-      display: flex;
-      flex-direction: row;
+        display: flex;
+        flex-direction: row;
         width: 30%;
         height: 80%;
         margin: 12%;
     }
     /*1ere Image Anniversaire*/
     .img_sec_resize2 {
-      display: flex;
-      flex-direction: row;
+        display: flex;
+        flex-direction: row;
         width: 30%;
         height: 80%;
         padding: 12%;
     }
     /*Section 4 Tarif*/
     .img_sec_resize3 {
-      display: flex;
-      flex-direction: row;
+        display: flex;
+        flex-direction: row;
         justify-content: space-around;
         width: 30%;
         height: 80%;
     }
-    .img_sec_resize3 img{
+    .img_sec_resize3 img {
         width: 30%;
     }
-    .img_sec img{
-      margin: 2%;
+    .img_sec img {
+        margin: 2%;
     }
-    .img_sec2{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 50%;
+    .img_sec2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
     }
-    .img_sec2 p{
-      margin: 1em;
-      font-weight: bold;
+    .img_sec2 p {
+        margin: 1em;
+        font-weight: bold;
     }
     .text_sec p {
-      width: 50%;
-      height: 20%;
-      margin: 1em;
+        width: 50%;
+        height: 20%;
+        margin: 1em;
         /*text-indent: 1.250em;*/
     }
     .hr_section {
@@ -1232,7 +1328,7 @@ li a:hover {
     /*==================*/
     /*== MAIN BISTROT ==*/
     /*==================*/
-    #mainbistrot{
+    #mainbistrot {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1246,35 +1342,35 @@ li a:hover {
         color: #fff;
         font-family: "ToxTypewriter";
     }
-    #mainbistrot h2{
+    #mainbistrot h2 {
         color: #B3FA84;
     }
-    #mainbistrot p{
+    #mainbistrot p {
         font-family: 'Arial', sans-serif;
         font-size: 16px;
     }
-    #mainbistrot section{
+    #mainbistrot section {
         display: flex;
         align-items: stretch;
         padding: 0;
         margin: 0;
     }
-    #mainbistrot div{
+    #mainbistrot div {
         padding: 2%;
         width: 50%;
     }
-    #mainbistrot .hr_bistrot{
+    #mainbistrot .hr_bistrot {
         width: 30%;
         margin: 0.5%;
         border: 2px solid #B3FA84;
     }
-    #mainbistrot .sec3_bistrot{
+    #mainbistrot .sec3_bistrot {
         width: 50%;
     }
-    #mainbistrot .sec1_bistrot{
+    #mainbistrot .sec1_bistrot {
         border-right: 4px solid #B3FA84;
     }
-    #mainbistrot .img_txt_bistrot{
+    #mainbistrot .img_txt_bistrot {
         width: 35%;
     }
     /* CROIX FERMETURE BISTROT */
@@ -1291,18 +1387,16 @@ li a:hover {
         cursor: pointer;
         z-index: 6;
         font-size: 4em;
-        padding:%;
+        padding: %;
         color: #B3FA84;
     }
-
     .hr {
         /* HR entre la Sec1 et la Se2, enlever*/
         display: none;
     }
-  /*========*/
-  /*  MAPS  */
-  /*========*/
-
+    /*========*/
+    /*  MAPS  */
+    /*========*/
     .maps {
         width: 100%;
         border-top: 3px solid #FB7826;
@@ -1317,11 +1411,11 @@ li a:hover {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
         text-align: center;
         background-color: #222;
         color: #fff;
@@ -1333,8 +1427,8 @@ li a:hover {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
     footer h4 {
         text-align: center;
@@ -1353,24 +1447,24 @@ li a:hover {
         font-size: 1.2em;
         margin: 5%;
     }
-    .partenaire{
-      width: 15%;
+    .partenaire {
+        width: 15%;
     }
-    .suivre{
+    .suivre {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .suivre a{
+    .suivre a {
         align-self: center;
     }
-    .img_logo{
+    .img_logo {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
-    .img_logo img{
-      width: 6em;
+    .img_logo img {
+        width: 6em;
     }
 }
